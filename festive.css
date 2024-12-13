@@ -1,0 +1,346 @@
+body {
+    font-family:'Courier New', Courier, monospace;
+    margin: 0;
+    background-image: url(Snowflakes.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav {
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+}
+a {
+    padding: 5px;
+    color: hsl(0, 0%, 9%);
+    text-decoration: none;
+    width: 15%;
+    text-align: center;
+}
+a:hover {
+    text-decoration: underline;
+}
+h1 {
+    --titlecolour: hsl(0, 0%, 0%);
+    color: var(--titlecolour);
+    text-align: center;
+    font-size: 40px;
+    background-color: hsl(186, 100%, 94%);
+    margin: 0px;
+    padding: 20px;
+}
+div {
+    color: hsl(0, 0%, 9%);
+    background-color: hsl(0, 0%, 100%);
+    padding: 1px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+section {
+    color: hsl(0, 0%, 9%);
+    padding: 20px;
+    margin: 10px;
+    background-color: hsl(0, 0%, 100%);
+}
+#mainDiv {
+    border-radius: 100%;
+    width: 300px;
+    height: 300px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#mainDiv2 {
+    align-self: flex-end;
+    border-radius: 20% 100% 20% 50% / 50% 20% 100% 20%;
+    width: 300px;
+    height: 300px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#mainDiv3 {
+    border-radius: 50% 25% 50% 25%;
+    width: 300px;
+    height: 300px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.snowzone {
+    background-color: transparent;
+    border-color: transparent;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+footer {
+    margin: 10px;
+    color: hsl(0, 0%, 100%);
+}
+.currentpage {
+    background-color: hsl(186, 100%, 94%);
+}
+.currentpage:hover {
+    text-decoration: underline;
+}
+#imageholder {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: transparent;
+    margin-bottom: 161px;
+}
+#imageholder section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    width: 40%;
+    height: 200px;
+}
+#imageholder a {
+    width: 100px;
+}
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 5px;
+}
+label {
+    margin-top: 10px;
+}
+input {
+    width: 75%;
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(0, 0%, 90%);
+}
+input:focus {
+    background-color: hsl(186, 100%, 94%);
+}
+textarea {
+    width: 75%;
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(0, 0%, 90%);
+}
+textarea:focus {
+    background-color: hsl(186, 100%, 94%);
+}
+.Submitbutton {
+    margin-top: 25px;
+    background-color: hsl(186, 100%, 94%);
+    border-radius: 5px;
+    color: hsl(0, 0%, 0%);
+}
+.Submitbutton:hover {
+    background-color: hsl(186, 100%, 88%);
+}
+
+/*Project-specific*/
+table {
+    width: 100%;
+    border: 5px solid hsl(27, 100%, 90%);
+    border-radius: 5px;
+    background-color: hsl(26, 77%, 61%);
+    align-self: center;
+}
+td {
+    border: 5px solid hsl(27, 100%, 90%);
+}
+#Striped {
+    width: 40px;
+    height: 40px;
+    margin: 50px;
+    background-image: repeating-linear-gradient(to top, hsl(125, 100%, 21%) 11px, hsl(125, 100%, 21%) 16px, hsl(0, 100%, 50%) 18px, hsl(0, 100%, 50%) 22px);
+    border-radius: 50% 50% 60% 60% / 50% 50% 80% 80%;
+    border: 7px groove hsl(0, 0%, 36%);
+    box-shadow: 5px 5px 3px 1px hsl(0, 0%, 64%);
+}
+#Radial {
+    width: 40px;
+    height: 40px;
+    margin: 50px;
+    background-image: conic-gradient(hsl(0, 100%, 50%), hsl(0, 0%, 100%), hsl(125, 100%, 21%), hsl(0, 100%, 50%));
+    border-radius: 100%;
+    border-width: 7px;
+    border-style: ridge ridge groove groove;
+    border-color: hsl(0, 0%, 36%);
+    box-shadow: 5px 5px 3px 1px hsl(0, 0%, 64%);
+}
+#TwoToned {
+    width: 40px;
+    height: 40px;
+    margin: 50px;
+    border: 7px groove hsl(0, 0%, 36%);
+    background-image: linear-gradient(to top left, hsl(0, 0%, 100%) 50%, hsl(109, 100%, 33%) 50%);
+    box-shadow: 5px 5px 3px 1px hsl(0, 0%, 64%);
+}
+#Borderspace {
+    width: 5px;
+    height: 5px;
+    margin: 50px;
+    border: 7px dashed hsl(0, 100%, 50%);
+    border-radius: 100%;
+    background-color: hsl(111, 100%, 25%);
+    padding: 20px;
+    background-clip: content-box;
+    box-shadow: 5px 5px 3px 1px hsl(0, 0%, 64%);
+}
+#frog {
+    display: none;
+}
+
+/*Cellular*/
+@media(max-width: 560px) {
+    nav {
+        font-size: 10px;
+    }
+    h1 {
+        font-size: 25px;
+    }
+    div {
+        font-size: 10px;
+    }
+    section {
+        font-size: 10px;
+    }
+    #mainDiv {
+        width: 150px;
+        height: 150px;
+    }
+    #mainDiv2 {
+        width: 150px;
+        height: 150px;
+    }
+    #mainDiv3 {
+        width: 150px;
+        height: 150px;
+    }
+    #Striped {
+        display: none;
+    }
+    #Radial {
+        display: none;
+    }
+    #TwoToned {
+        display: none;
+    }
+    #Borderspace {
+        display: none;
+    }
+    #frog {
+        display: block;
+    }
+    #frogALT {
+        display: none;
+    }
+}
+
+/*Desktop*/
+@media(min-width: 1300px) {
+    h1 {
+        font-size: 50px;
+    }
+    nav {
+        font-size: 25px;
+    }
+    div {
+        font-size: 20px;
+    }
+    #mainDiv {
+        width: 450px;
+        height: 450px;
+    }
+    #mainDiv2 {
+        width: 450px;
+        height: 450px;
+    }
+    #mainDiv3 {
+        width: 450px;
+        height: 450px;
+    }
+}
+
+/*Dark Mode*/
+@media(prefers-color-scheme: dark) {
+    nav {
+        background-color: hsl(0, 0%, 8%);
+    }
+    a {
+        color: hsl(0, 0%, 100%);
+    }
+    .currentpage {
+        background-color: hsl(0, 0%, 12%);
+    }
+    h1 {
+        background-color: hsl(0, 0%, 12%);
+        color: hsl(209, 100%, 83%);
+    }
+    div {
+        background-color: hsl(0, 0%, 8%);
+        color: hsl(0, 0%, 100%);
+    }
+    section {
+        background-color: hsl(0, 0%, 8%);
+        color: hsl(0, 0%, 100%);
+    }
+    input {
+        background-color: hsl(0, 0%, 16%);
+    }
+    input:focus {
+        background-color: hsl(209, 39%, 55%);
+    }
+    textarea {
+        background-color: hsl(0, 0%, 16%);
+    }
+    textarea:focus {
+        background-color: hsl(209, 39%, 55%);
+    }
+    .Submitbutton {
+        background-color: hsl(209, 39%, 55%);
+        color: hsl(0, 0%, 100%);
+    }
+    .Submitbutton:hover {
+        background-color: hsl(209, 100%, 83%);
+    }
+
+    /*Project-specific*/
+    #Striped {
+        box-shadow: 5px 5px 3px 1px hsl(0, 0%, 0%);
+    }
+    #Radial {
+        box-shadow: 5px 5px 3px 1px hsl(0, 0%, 0%);
+    }
+    #TwoToned {
+        box-shadow: 5px 5px 3px 1px hsl(0, 0%, 0%);
+    }
+    #Borderspace {
+        box-shadow: 5px 5px 3px 1px hsl(0, 0%, 0%);
+    }
+    table {
+        background-color: hsl(26, 100%, 16%);
+        border-color: hsl(27, 12%, 49%);
+    }
+    th {
+        border-color: hsl(27, 12%, 49%);
+    }
+    td {
+        border-color: hsl(27, 12%, 49%);
+    }
+}
